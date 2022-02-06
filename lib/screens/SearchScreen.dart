@@ -46,7 +46,7 @@ class SearchScreen extends StatelessWidget {
                     }
                     return const Center(
                       child: CircularProgressIndicator(),
-                    )
+                    );
                   },
                 )
               ],
