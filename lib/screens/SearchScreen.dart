@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_search_clone/services/ApiService.dart';
+import 'package:google_search_clone/widgets/SearchTabs.dart';
+import 'package:google_search_clone/widgets/web/WebSearchHeader.dart';
 
 class SearchScreen extends StatelessWidget {
   final String searchQuery;
@@ -22,10 +25,10 @@ class SearchScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                WebSearchHeader(),
+                const WebSearchHeader(),
                 Padding(
                     padding: EdgeInsets.only(left: size.width<= 768 ? 10 : 150.0),
-                child: SingleChildScrollView(
+                child: const SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: SearchTabs(),
                 ),

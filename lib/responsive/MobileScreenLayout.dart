@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_search_clone/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_search_clone/widgets/SignInButton.dart';
+import 'package:google_search_clone/widgets/TranslationButtons.dart';
+import 'package:google_search_clone/widgets/mobile/MobileFooter.dart';
+import 'package:google_search_clone/widgets/web/Search.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
@@ -64,12 +67,12 @@ class MobileScreenLayout extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
-                    children: [
+                    children: const [
                       Search(),
-                      const SizedBox(
+                      SizedBox(
                         height: 20,
                       ),
-                      TranslationButton(),
+                      TranslationButtons(),
                     ],
                   ),
                   const MobileFooter(),

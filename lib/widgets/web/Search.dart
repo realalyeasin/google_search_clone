@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_search_clone/screens/SearchScreen.dart';
 
 import '../../colors.dart';
 
@@ -61,7 +62,9 @@ class Search extends StatelessWidget {
               },
             ),
           ),
-          const SizedBox(height: 20,)
+          const SizedBox(
+            height: 20,
+          )
         ],
       ),
     );
