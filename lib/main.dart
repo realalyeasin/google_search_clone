@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_search_clone/responsive/MobileScreenLayout.dart';
+import 'package:google_search_clone/responsive/ResponsiveLayout.dart';
+import 'package:google_search_clone/responsive/WebScreenLayout.dart';
 
 import 'colors.dart';
 
